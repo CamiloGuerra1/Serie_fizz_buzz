@@ -1,5 +1,5 @@
 package ejercicio_fizzbuzz;
-import java.util.*;
+import java.util.*; //Importación de todas las clases del paquete java.util
 //Ejercicio de numeros fizzbuzz
 
 public class Ejercicio_fizzbuzz {
@@ -7,15 +7,16 @@ public class Ejercicio_fizzbuzz {
     //Declaración de variables
     public static Ejercicio_fizzbuzz fizzbuzz = new Ejercicio_fizzbuzz(); //Declaración de objeto fizzbuzz
     public static Scanner sc = new Scanner(System.in); //Declarwción de variable Scanner
+    //Declaración de los rangos inferiores y superiores
     public static int rango_inferior;
     public static int rango_superior;
     
     public void fizz_buzz(int rango_inferior, int rango_superior){
         System.out.println("Ejercicio de numeros fizz_buzz");
         System.out.print("Señor usuario por favor digite el rango inferior de la secuencia fizz_buzz: ");
-        rango_inferior = sc.nextInt();
+        rango_inferior = sc.nextInt(); //Lectura del rango inferior
         System.out.print("Señor usuario por favor digite el rango superior de la secuencia fizz_buzz: ");
-        rango_superior = sc.nextInt();
+        rango_superior = sc.nextInt(); //Lectura del rango superior
         System.out.print("\nCalculado el proceso...\n");
         
         for (int i = rango_inferior; rango_inferior <= rango_superior; rango_inferior++){
